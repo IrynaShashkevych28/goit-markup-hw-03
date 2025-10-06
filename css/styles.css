@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 h1, h2, h3, h4, h5, h6, p{
   margin: 0;
 }
@@ -12,6 +15,7 @@ body{
     color: #434455;
     line-height: 1.5;
     
+    
 }
 .container{
   margin: 0 auto;
@@ -19,14 +23,30 @@ body{
   width: 1158px;
 
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+
 }
 section{
   padding-bottom: 120px;
   padding-top: 120px;
 }
+
+.header{ 
+  padding: 24px ;
+  border-bottom: 1px solid #E7E9FC;
+}
+.header-container{
+  display: flex;
+  align-items: center;
+
+}
+
+.menu{
+  display: flex;
+}
 .logo{
+  display: flex;
+  align-items: center;
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-decoration: none;
@@ -35,18 +55,25 @@ section{
   letter-spacing: 0.03em;
   font-size: 18px;
   text-transform: uppercase;
+  
 }
 .logo-accent{
   color: #2E2F42;
   font-family: "Roboto", sans-serif;
 }
 
+
 .nav-list{
   list-style-type: none;
+  display: flex;
+  gap: 40px;
+  margin-right: 332px;
   
 }
 
 .nav-link{
+  display: block;
+  padding: 24px 0;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -54,6 +81,7 @@ section{
   line-height: 1.5;
   color: #2E2F42;
   letter-spacing: 0.02em;
+
 
 }
 .nav-link:hover,
@@ -83,8 +111,13 @@ address{
 }
 .address-list{
   list-style-type: none;
+  display: flex;
+  gap: 40px;
+ 
+  
 }
 .contact-link{
+  
   color: #434455;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -100,21 +133,32 @@ address{
 }
  
 
-
+.visually-hidden {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ border: 0;
+ padding: 0;
+ white-space: nowrap;
+ clip-path: inset(100%);
+ clip: rect(0 0 0 0);
+ overflow: hidden;
+}
   .hero{
     background-color: #2E2F42;
 
  width: 1440px;
- height: 600px;
+ height: auto;
  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   
-
-   
-  } 
  
+  } 
+
+
   .hero-title{
     width: 496px;
     color: #ffffff;
@@ -122,9 +166,11 @@ address{
     font-size: 56px;
     letter-spacing: 0.02em;
     line-height: 1.07;
-  margin: auto;
+    margin: auto;
+    margin-bottom: 48px;
+    margin-top: 188px;
 
-;
+
   }
   .hero-btn {
     font-family: "Roboto", sans-serif;
@@ -135,25 +181,34 @@ address{
     cursor: pointer;
     color: #FFFFFF;
     font-weight: 500;
-   width: 169px;
-   height: 56px;
-    ;
+   min-width: 169px;
+   min-height: 56px;
+   border-radius: 4px;
+   border: 1px solid transparent;
+   padding: 16px, 32px;
+   display: block;
+   margin: 0 auto 188px;
+   
+    
     
   
   }
  .hero-btn:hover,
  .hero-btn:focus{
     background-color: #404BBF;
-    ;
+    
 
   }
   .features-item{
     width: 264px;
+    text-align: left;
   }
   .features-list{
     list-style: none;
     display: flex;
     gap: 24px;
+    justify-content: center;
+    
   }
 .features-title{
   
@@ -162,10 +217,11 @@ address{
   letter-spacing: 0.02em;
   color: #2E2F42;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 .features-text{
 
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -173,21 +229,38 @@ address{
 }
 .team{
   background-color: #F4F4FD;
+  width: 1440px;
+}
+.team-card{
+  margin-bottom: 32px;
+  display: block;
+  width: 264px;
+  
 }
 .team-list{
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+ 
+  
 }
 .team-title{
-  
   font-size: 36px;
   letter-spacing: 0.02em;
   color:#2E2F42;
   text-align: center;
   line-height: 1.11;
   text-transform: capitalize;
+  margin: 0 auto 72px;
 }
 .team-item{
   background-color: #ffffff;
+  width: 264px;
+  height: auto;
+  margin-top: 72px;
+   border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: 1px solid transparent;
   
 }
 .name-team{
@@ -198,6 +271,7 @@ address{
   color: #2E2F42;
   text-align: center;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 .team-text{
   color: #434455;
@@ -207,6 +281,8 @@ address{
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 32px;
+  
 }
 .portfolio-title{
 color: #2E2F42;
@@ -215,12 +291,40 @@ letter-spacing: 0.02em;
 text-align: center;
 line-height: 1.11;
 text-transform: capitalize;
+margin: 0 auto 72px;
 }
+.portfolio-card{
+    display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+ 
+}
+
+
+
  .portfolio-list{
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  padding: 0;
+  margin: 0;
+
+  
+  
  }
  .portfolio-item{
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+   flex: calc((100% - 48px) / 3)
+
+  
+  
+  
  }
  .gruppe-portfolio{
   font-weight: 500;
@@ -229,29 +333,54 @@ text-transform: capitalize;
   color: #2E2F42;
   text-align: center;
   line-height: 1.2;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  text-align: left;
+  
  }
+
+ 
+ .portfolio-item > .wrapper {
+ 
+  border: 1px solid #E7E9FC;
+   border-top: none;
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+}
  .portfolio-text{
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 32px;
+  text-align: left;
  }
+
  .site-footer{
   background-color: #2E2F42;
+  padding: 100px 0;
+ 
   
  }
+ 
+ 
+ 
   .logo-accent-footer{
     color: #F4F4FD;
     font-size: 18px;
     line-height: 1.17;
     text-transform: uppercase;
+    
   }
   .footer-text{
+    width: 264px;
     color: #F4F4FD;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 16px;
   }
 
 
