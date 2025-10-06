@@ -43,12 +43,13 @@ section{
 .header-container{
   display: flex;
   align-items: center;
+  padding: 0 15px;
 
 }
 
 .menu{
   display: flex;
-  align-items: center
+  align-items: center;
 }
 .logo{
   display: flex;
@@ -336,7 +337,7 @@ margin: 0 auto 72px;
   
  }
  
-.container  {
+.container.wrapper{
 max-width: 1158px;    
   margin-left: auto;
   margin-right: auto;
