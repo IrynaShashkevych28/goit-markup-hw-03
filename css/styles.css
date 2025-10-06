@@ -334,6 +334,14 @@ margin: 0 auto 72px;
   
   
  }
+ .portfolio .container {
+max-width: 1158px;   
+  padding: 32px 16px;  
+  margin-left: auto;
+  margin-right: auto;
+ }
+  
+  
  .portfolio-item{
   background-color: #ffffff;
   display: flex;
@@ -380,32 +388,37 @@ margin: 0 auto 72px;
   text-align: left;
  }
 
- .site-footer{
+.site-footer {
   background-color: #2E2F42;
   padding: 100px 0;
+}
+
+.footer-link {
+  display: inline-block;   
+  margin-bottom: 16px;     
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+
+.logo-main {
+  color: #4D5AE5;          
+}
+
+.logo-accent-footer {
+  color: #F4F4FD;  
+}
   
- 
-  
- }
- 
- 
- 
-  .logo-accent-footer{
-    color: #F4F4FD;
-    font-size: 18px;
-    line-height: 1.17;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 16px;
-    
-  }
-  .footer-text{
+    .footer-text{
     max-width: 264px;
     color: #F4F4FD;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding-top: 16px;
+
   }
 
 
