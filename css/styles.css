@@ -330,13 +330,16 @@ margin: 0 auto 72px;
   margin: 0;
  }
  
-.container{
+.container.wrapper{
 max-width: 1158px;    
   margin-left: auto;
   margin-right: auto;
-  padding: 32px 16px;
+  
+  
+  
   
  }
+ 
  .portfolio-item{
   background-color: #ffffff;
   width: calc((100% - 48px) / 3);
@@ -353,33 +356,28 @@ max-width: 1158px;
   font-size: 20px;
   letter-spacing: 0.02em;
   color: #2E2F42;
-  text-align: center;
   line-height: 1.2;
-  margin-top: 32px;
-  margin-bottom: 8px;
-  text-align: left;
-  padding: 32px 16px;
-  padding-bottom: 8px;
+  
+  
+  
   
  }
+
  .portfolio-item > .wrapper {
   border: 1px solid #E7E9FC;
    border-top: none;
   padding: 16px;
   width: 100%;
-  text-align: center;
+   padding: 32px, 16px;
+  
 }
  .portfolio-text{
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #434455;
-  margin-bottom: 32px;
-  text-align: left;
-  padding-top: 8px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  
+ 
  }
 
 .site-footer {
