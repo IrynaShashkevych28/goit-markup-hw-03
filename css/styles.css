@@ -26,6 +26,7 @@ img {
   margin: 0 auto;
   padding: 0 15px;
   width: 1158px;
+  padding: 32px 16px;
 
 
 
@@ -335,8 +336,7 @@ margin: 0 auto 72px;
   
  }
  .portfolio .container {
-max-width: 1158px;   
-  padding: 32px 16px;  
+max-width: 1158px;    
   margin-left: auto;
   margin-right: auto;
  }
@@ -347,7 +347,7 @@ max-width: 1158px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-   flex: calc((100% - 48px) / 3);
+  width: calc((100% - 48px) / 3);
   
  }
  .portfolio-item h3{
@@ -410,15 +410,12 @@ max-width: 1158px;
 .logo-accent-footer {
   color: #F4F4FD;  
 }
-  
-    .footer-text{
-    max-width: 264px;
-    color: #F4F4FD;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding-top: 16px;
 
-  }
-
-
+.footer-paragraph {
+  max-width: 264px;
+  color: #F4F4FD;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding-top: 16px;
+}
