@@ -35,7 +35,7 @@ section{
   padding-bottom: 120px;
   padding-top: 120px;
 }
-
+/* Header*/
 .header{ 
   padding: 24px ;
   border-bottom: 1px solid #E7E9FC;
@@ -44,7 +44,6 @@ section{
   display: flex;
   align-items: center;
   padding: 0 15px;
-
 }
 
 .menu{
@@ -140,7 +139,7 @@ address{
   color: #404BBF;
 }
  
-
+/* Hero-section */
 .visually-hidden {
  position: absolute;
  width: 1px;
@@ -210,6 +209,7 @@ address{
     
 
   }
+  /* Fetures-section */
   .features-item{
     width: 264px;
     text-align: left;
@@ -239,6 +239,7 @@ address{
   color: #434455;
   font-size: 16px;
 }
+/* Team-section */
 .team{
   background-color: #F4F4FD;
   width: 1440px;
@@ -304,6 +305,7 @@ address{
   margin-bottom: 32px;
   
 }
+/* Portfolio-section */
 
 .portfolio-title{
 color: #2E2F42;
@@ -313,6 +315,11 @@ text-align: center;
 line-height: 1.11;
 text-transform: capitalize;
 margin: 0 auto 72px;
+}
+.wrapper{
+  padding: 32px 16px;
+  border: 1px solid #E7E9FC;
+   border-top: none;
 }
 .portfolio-card{
     display: block;
@@ -330,17 +337,7 @@ margin: 0 auto 72px;
   margin: 0;
  }
  
-.container.wrapper{
-max-width: 1158px;    
-  margin-left: auto;
-  margin-right: auto;
-  padding: 32px 16px
-  
-  
-  
-  
-  
- }
+
  
  .portfolio-item{
   background-color: #ffffff;
@@ -359,33 +356,18 @@ max-width: 1158px;
   letter-spacing: 0.02em;
   color: #2E2F42;
   line-height: 1.2;
-  padding-top: 32px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  
-  
-  
+  margin-bottom: 8px;
   
  }
 
- .portfolio-item > .wrapper {
-  border: 1px solid #E7E9FC;
-   border-top: none;
-  width: 100%;
-   
-  
-}
  .portfolio-text{
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  
- 
+  margin: 0;
  }
-
+/* Footer */
 .site-footer {
   background-color: #2E2F42;
   padding: 100px 0;
