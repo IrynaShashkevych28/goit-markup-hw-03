@@ -37,13 +37,11 @@ section{
 }
 /* Header*/
 .header{ 
-  padding: 24px ;
   border-bottom: 1px solid #E7E9FC;
 }
 .header-container{
   display: flex;
   align-items: center;
-  padding: 0 15px;
 }
 
 .menu{
@@ -51,8 +49,6 @@ section{
   align-items: center;
 }
 .logo{
-  display: flex;
-  align-items: center;
   margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -74,7 +70,6 @@ section{
   list-style-type: none;
   display: flex;
   gap: 40px;
-  margin-right: 332px;
   
 }
 
@@ -96,13 +91,7 @@ section{
   color: #404BBF;
 }
 .nav-link.active{
-  color: #2E2F42;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
-
+ 
 }
 .nav-link.active:hover,
 .nav-link.active:focus,
@@ -114,6 +103,7 @@ section{
 
 address{
   font-style: normal;
+  margin-left: auto;
   
 }
 .address-list{
@@ -154,14 +144,7 @@ address{
 }
   .hero{
     background-color: #2E2F42;
-
- width: 100%;
- height: auto;
- display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 188px; 
+   padding-top: 188px; 
   padding-bottom: 188px
   
  
@@ -177,7 +160,7 @@ address{
     line-height: 1.07;
     margin: auto;
     margin-bottom: 48px;
-    margin-top: 188px;
+    
 
 
   }
@@ -194,9 +177,9 @@ address{
    min-height: 56px;
    border-radius: 4px;
    border: 1px solid transparent;
-   padding: 16px, 32px;
+   padding: 16px 32px;
    display: block;
-   margin: 0 auto 188px;
+   margin: 0 auto ;
    border: none;
    
     
@@ -242,24 +225,21 @@ address{
 /* Team-section */
 .team{
   background-color: #F4F4FD;
-  width: 1440px;
+  
 }
 .card-text{
   padding: 32px 0;
   text-align: center;
-  margin-bottom: 8px;
+  
 
 }
 .team-card{
-  margin-bottom: 32px;
-  display: block;
-  width: 264px;
+  
   
 }
 .team-list{
   list-style: none;
   display: flex;
-  justify-content: space-between;
   gap: 24px;
  
   
@@ -276,11 +256,8 @@ address{
 .team-item{
   background-color: #ffffff;
   width: 264px;
-  height: auto;
-  margin-top: 72px;
    border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border: 1px solid transparent;
   
 }
 .name-team{
@@ -302,7 +279,6 @@ address{
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-bottom: 32px;
   
 }
 /* Portfolio-section */
@@ -397,5 +373,5 @@ margin: 0 auto 72px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-top: 16px;
+ 
 }
